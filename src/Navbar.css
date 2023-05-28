@@ -4,15 +4,50 @@
    top: 0;
    left: 0;
    height: 80px;
-   background-color: #068DA9;
+   background: var(--secondary);
+   display: flex;
+   justify-content: center;
 }
 
 .navbar-wrapper {
    width: 60%;
    height: 100%;
-   margin: 0 auto;
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   gap: 5%;
+   gap: 3%;
+}
+
+.socials-wrapper {
+   width: 10%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   gap: 15%;
+   align-items: center;
+}
+
+.logo-wrapper {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.social-link {
+   min-height: 35px;
+   max-height: 35px;
+   min-width: 35px;
+   max-width: 35px;
+   display: flex;
+   align-items: center;
+}
+
+.social-icon {
+   height: 100%;
+   width: 100%;
+}
+
+.logo {
+   height: 55%;
 }

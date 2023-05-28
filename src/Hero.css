@@ -1,0 +1,30 @@
+.hero-wrapper {
+   width: 60%;
+   margin: 0 auto;
+   display: flex;
+}
+
+.hero-landing {
+   width: 50%;
+   min-width: 520px;
+   flex-direction: column;
+   color: var(--dark-text);
+}
+
+.hero-title {
+   margin-top: 8rem;
+   margin-bottom: 2rem;
+}
+
+.hero-title {
+   font-size: 5.5rem;
+   font-weight: 600;
+}
+
+.hero-description {
+   width: 85%;
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 2rem;
+   margin-bottom: 1.5rem;
+}
