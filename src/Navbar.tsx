@@ -12,6 +12,10 @@ type SocialsData = {
 };
 
 const Navbar = () => {
+  const triangles: number[] = [];
+  for (let i = 1; i < 100; ++i) {
+    triangles.push(i);
+  }
   const navlinks: NavlinkData[] = [
     { text: "Acasă", link: "#" },
     { text: "Afterschool", link: "#" },
@@ -27,31 +31,38 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="header-wrapper">
-      <div className="navbar-wrapper">
-        <a href="#" className="logo-wrapper">
-          <img src="./src/assets/logo.svg" alt="logo" className="logo"></img>
-        </a>
-        {navlinks.map((navlink, index) => {
-          return (
-            <Navlink text={navlink.text} link={navlink.link} key={index} />
-          );
+    <>
+      <div className="header-wrapper">
+        <div className="navbar-wrapper">
+          <a href="#" className="logo-wrapper">
+            <img src="./src/assets/logo.svg" alt="logo" className="logo"></img>
+          </a>
+          {navlinks.map((navlink, index) => {
+            return (
+              <Navlink text={navlink.text} link={navlink.link} key={index} />
+            );
+          })}
+        </div>
+        <div className="socials-wrapper">
+          {socials.map((social, index) => {
+            return (
+              <a href={social.link} className="social-link" key={index}>
+                <img
+                  src={social.source}
+                  alt="social"
+                  className="social-icon"
+                ></img>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+      <div className="triangles-wrapper">
+        {triangles.map((id) => {
+          return <div className="triangle" key={id}></div>;
         })}
       </div>
-      <div className="socials-wrapper">
-        {socials.map((social, index) => {
-          return (
-            <a href={social.link} className="social-link" key={index}>
-              <img
-                src={social.source}
-                alt="social"
-                className="social-icon"
-              ></img>
-            </a>
-          );
-        })}
-      </div>
-    </div>
+    </>
   );
 };
 

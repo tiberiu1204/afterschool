@@ -51,3 +51,15 @@
 .logo {
    height: 55%;
 }
+
+.triangle {
+   display: inline-block;
+   border-top: calc(var(--header-height) * .4) solid var(--secondary);
+   border-left: calc(var(--header-height) * .7) solid var(--primary);
+   border-right: calc(var(--header-height) * .7) solid var(--primary);
+   background-color: var(--secondary);
+}
+
+.triangles-wrapper {
+   width: 20000vw;
+}

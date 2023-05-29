@@ -20,6 +20,7 @@ html {
 
 body {
    background-color: var(--primary);
+   overflow-x: hidden;
 }
 
 h1, h2, body {
@@ -29,9 +30,12 @@ h1, h2, body {
 .section {
    width: 100%;
    height: 100%;
-   border: 1px solid grey;
 }
 
 .accent {
    color: var(--accent);
+}
+
+.grey {
+   background-color: #cfcfcf;
 }
