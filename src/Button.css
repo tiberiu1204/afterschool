@@ -1,0 +1,66 @@
+.button {
+   display: inline-block;
+   margin: .3rem;
+   font-weight: 500;
+   border-radius: 2rem;
+   padding: .4rem .6rem .4rem .9rem;
+   font-size: 1rem;
+   text-decoration: none;
+   transition: all 200ms;
+}
+
+.button__primaryTheme {
+   background-color: var(--accent);
+   color: var(--primary);
+}
+
+.button__secondaryTheme {
+   background-color: transparent;
+   color: var(--dark-text);
+}
+
+.button:hover {
+   opacity: 60%;
+}
+
+.button__primaryTheme:hover {
+   background-color: var(--dark-text);
+   opacity: 100%;
+}
+
+.button:hover .arrow-tip {
+   transform: translateX(0);
+}
+
+.button:hover .arrow-body {
+   opacity: 100%;
+}
+
+.arrow-primary {
+   fill: white;
+}
+.arrow-secondary {
+   fill: var(--dark-text);
+}
+
+.arrow-svg {
+   height: 10px;
+   width: 13px;
+   vertical-align: middle;
+}
+
+.button-text {
+   margin-right: .5em;
+}
+
+.arrow-body {
+   opacity: 0%;
+}
+
+.arrow-tip {
+   transform: translateX(-30%);
+}
+
+.arrow-body, .arrow-tip {
+   transition: all 150ms ease;
+}

@@ -3,7 +3,7 @@
    position: fixed;
    top: 0;
    left: 0;
-   height: 80px;
+   height: var(--header-height);
    background: var(--secondary);
    display: flex;
    justify-content: center;

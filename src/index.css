@@ -4,8 +4,9 @@
    --primary: #FFFFFF;
    --secondary: #4D0BB7;
    --tertiary: #3700bb;
-   --quaternary: #03dac5;
-   --dark-text: #00201a;
+   --accent: #635bff;
+   --dark-text: #001620;
+   --header-height: 60px
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 html {
-   margin-top: 80px;
+   margin-top: var(--header-height);
    font-family: 'Ubuntu', sans-serif;
 }
 
@@ -31,26 +32,6 @@ h1, h2, body {
    border: 1px solid grey;
 }
 
-.button {
-   margin: .3rem;
-   font-weight: 500;
-   border-radius: 2rem;
-   padding: .4rem .9rem;
-   font-size: 1rem;
-   text-decoration: none;
-   transition: all 200ms;
-}
-
-.button__primaryTheme {
-   background-color: var(--dark-text);
-   color: var(--primary);
-}
-
-.button__secondaryTheme {
-   background-color: transparent;
-   color: var(--dark-text);
-}
-
-.button:hover {
-   opacity: 85%;
+.accent {
+   color: var(--accent);
 }
