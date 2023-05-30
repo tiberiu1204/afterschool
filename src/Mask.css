@@ -3,11 +3,11 @@
 }
 
 .guides-wrapper {
-   position: absolute;
+   position: fixed;
    width: 100%;
-   z-index: -999;
+   z-index: -1;
    display: flex;
-   min-height: var(--min-height);
+   height: 100%;
 }
 
 .guide {
@@ -16,4 +16,17 @@
    border-right: 1px grey dashed;
    border-left: 1px grey dashed;
    opacity: 15%;
+}
+
+.rainbow-waves {
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   top: calc(var(--header-height));
+   z-index: -2;
+}
+
+.rainbow-waves-img {
+   opacity: 70%;
 }

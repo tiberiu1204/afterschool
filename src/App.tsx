@@ -1,22 +1,11 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import "./App.css";
+import Mask from "./Mask";
 
 function App() {
   return (
     <>
-      <div className="guides-wrapper">
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-        <div className="guide"></div>
-      </div>
+      <Mask />
       <Navbar />
       <Hero />
     </>

@@ -4,9 +4,13 @@
    top: 0;
    left: 0;
    height: var(--header-height);
-   background: var(--secondary);
+   background: linear-gradient(var(--secondary), rgba(77, 11, 183, .70));
    display: flex;
    justify-content: center;
+}
+
+.header-wrapper.active {
+   background: var(--secondary);
 }
 
 .navbar-wrapper {
@@ -52,14 +56,17 @@
    height: 55%;
 }
 
-.triangle {
+/* .triangle {
+   background-clip: padding-box;
    display: inline-block;
    border-top: calc(var(--header-height) * .4) solid var(--secondary);
    border-left: calc(var(--header-height) * .7) solid var(--primary);
    border-right: calc(var(--header-height) * .7) solid var(--primary);
    background-color: var(--secondary);
+   border-left-color: transparent;
+   border-right-color: transparent;
 }
 
 .triangles-wrapper {
    width: 20000vw;
-}
+} */

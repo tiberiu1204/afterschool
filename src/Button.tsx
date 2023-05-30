@@ -18,7 +18,7 @@ const Button = ({ text, link, style }: Props) => {
         xmlns="http://www.w3.org/2000/svg"
         className="arrow-svg"
       >
-        <g className={"arrow-" + style} clip-path="url(#clip0_1_2)">
+        <g className={"arrow-" + style} clipPath="url(#clip0_1_2)">
           <rect
             className="arrow-body"
             y="1.66957"

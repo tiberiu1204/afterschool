@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Navbar.css";
 import Navlink from "./Navlink";
 
@@ -12,10 +13,10 @@ type SocialsData = {
 };
 
 const Navbar = () => {
-  const triangles: number[] = [];
-  for (let i = 1; i < 100; ++i) {
-    triangles.push(i);
-  }
+  // const triangles: number[] = [];
+  // // for (let i = 1; i < 100; ++i) {
+  // //   triangles.push(i);
+  // // }
   const navlinks: NavlinkData[] = [
     { text: "Acasă", link: "#" },
     { text: "Afterschool", link: "#" },
@@ -30,9 +31,18 @@ const Navbar = () => {
     { source: "./src/assets/whatsapp.svg", link: "#" },
   ];
 
+  const [headerIsActive, setHeaderIsActive] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) setHeaderIsActive(true);
+    else setHeaderIsActive(false);
+  });
+
   return (
     <>
-      <div className="header-wrapper">
+      <div
+        className={headerIsActive ? "header-wrapper active" : "header-wrapper"}
+      >
         <div className="navbar-wrapper">
           <a href="#" className="logo-wrapper">
             <img src="./src/assets/logo.svg" alt="logo" className="logo"></img>
@@ -57,11 +67,11 @@ const Navbar = () => {
           })}
         </div>
       </div>
-      <div className="triangles-wrapper">
+      {/* <div className="triangles-wrapper">
         {triangles.map((id) => {
           return <div className="triangle" key={id}></div>;
         })}
-      </div>
+      </div> */}
     </>
   );
 };
