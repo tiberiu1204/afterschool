@@ -14,12 +14,9 @@
 }
 
 .hero-title {
-   margin-bottom: 2rem;
-}
-
-.hero-title {
    font-size: 5.5rem;
    font-weight: 600;
+   margin-bottom: 2rem;
 }
 
 .hero-description {
@@ -32,7 +29,7 @@
 
 .hero-visual {
    height: 100%;
-   width: 100%;
+   width: 50%;
 }
 
 .hero-image {
