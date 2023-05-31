@@ -1,7 +1,7 @@
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Mask from "./Mask";
-import Features from "./Features";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Mask from "./components/Mask";
+import Features from "./components/Features";
 
 function App() {
   return (

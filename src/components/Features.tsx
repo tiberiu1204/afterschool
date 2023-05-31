@@ -1,7 +1,7 @@
 import "./Features.css";
 import Handprint from "./Handprint";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type Feature = {
   name: string;
