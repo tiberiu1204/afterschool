@@ -1,4 +1,7 @@
 import "./Features.css";
+import Handprint from "./Handprint";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
 
 type Feature = {
   name: string;
@@ -60,6 +63,7 @@ const Features = () => {
 
   return (
     <section className="section grey">
+      <div className="section-triangles-transition primary"></div>
       <div className="section-container">
         <div className="section-layout-container collumn-layout">
           <div className="features-wrapper">
@@ -78,15 +82,30 @@ const Features = () => {
           </div>
           <div className="benefits-wrapper">
             {benefits.map((benefit, index) => {
+              const { ref, inView } = useInView();
+              const [isActive, setIsActive] = useState(false);
+              window.addEventListener("scroll", () => {
+                if (inView) setIsActive(true);
+              });
               return (
                 <div
                   className={`benefit-wrapper ${
-                    index % 2 == 0 ? "row-reverse" : ""
+                    index % 2 == 0
+                      ? isActive
+                        ? "benefit-active left"
+                        : "left"
+                      : isActive
+                      ? "benefit-active right"
+                      : "right"
                   }`}
                   key={index}
+                  ref={ref}
                 >
                   <div className="benefit-text-wrapper">
-                    <h1 className="benefit-title">{benefit.name}</h1>
+                    <h1 className="benefit-title">
+                      <Handprint />
+                      {benefit.name}
+                    </h1>
                     <p className="benefit-description">{benefit.description}</p>
                   </div>
                   <div className="benefit-img-wrapper">
