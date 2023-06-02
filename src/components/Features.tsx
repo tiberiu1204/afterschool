@@ -85,7 +85,9 @@ const Features = () => {
               const { ref, inView } = useInView();
               const [isActive, setIsActive] = useState(false);
               window.addEventListener("scroll", () => {
-                if (inView) setIsActive(true);
+                if (inView) {
+                  setIsActive(true);
+                }
               });
               return (
                 <div
@@ -106,7 +108,10 @@ const Features = () => {
                       <Handprint />
                       {benefit.name}
                     </h1>
-                    <p className="benefit-description">{benefit.description}</p>
+                    <div className="underline dark"></div>
+                    <p className="benefit-description description">
+                      {benefit.description}
+                    </p>
                   </div>
                   <div className="benefit-img-wrapper">
                     <img

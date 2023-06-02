@@ -1,0 +1,42 @@
+.five-stars {
+   width: calc(.1rem * 82);
+   height: calc(.1rem * 22);
+}
+
+.reviews-wrapper {
+   position: relative;
+   color: var(--dark-text);
+}
+
+.reviews-wrapper {
+   display: flex;
+   gap: 7%;
+}
+
+.review {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 16px;
+   transform: translateY(25%);
+   opacity: 0%;
+   transition: all 300ms ease-out;
+}
+
+.review.active {
+   transform: translateY(0);
+   opacity: 100%;
+}
+
+.review-text {
+   text-align: center;
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+}
+
+.reviewer-name {
+   text-align: center;
+   margin-bottom: 10px;
+}

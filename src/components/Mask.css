@@ -25,6 +25,7 @@
    top: 0;
    top: calc(var(--header-height));
    z-index: -2;
+   overflow-x: hidden;
 }
 
 .rainbow-waves-img {

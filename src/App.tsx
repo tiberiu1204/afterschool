@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Mask from "./components/Mask";
 import Features from "./components/Features";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Reviews />
     </>
   );
 }

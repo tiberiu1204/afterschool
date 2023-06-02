@@ -48,7 +48,6 @@
 }
 
 .benefit-description {
-   opacity: 80%;
    font-size: 1.2em;
    line-height: 1.5em;
 }
@@ -76,29 +75,18 @@
    margin-top: 8px;
 }
 
-.dark {
-   background: linear-gradient(var(--secondary), #0d018c);
-}
-
-.section-triangles-transition {
-   width: 100%;
-   height: 21px;
-}
-.section-triangles-transition.primary {
-   background: url("./src/assets/triangle-white.svg");
-}
-
 .left, .right {
+   position: relative;
    opacity: 0%;
-   transition: all 700ms ease-in-out;
+   transition: all 600ms ease-out;
 }
 
 .left {
-   transform: translateX(-100%);
+   transform: translateX(-20%);
 }
 
 .right {
-   transform: translateX(100%);
+   transform: translateX(20%);
    flex-direction: row-reverse;
 }
 

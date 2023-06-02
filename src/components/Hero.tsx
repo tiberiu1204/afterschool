@@ -11,7 +11,7 @@ const Hero = () => {
               <h1 className="hero-title">
                 Educație <br /> de calitate <br /> copilului tău
               </h1>
-              <h2 className="hero-description">
+              <h2 className="hero-description description">
                 Alege să investești în educația copilului tău, prin a îl încrie
                 – la fel ca mulți alți părinți mulțumiți – la noi la
                 afterschool, unde se va dezvolta armonios pe plan intelectual,
