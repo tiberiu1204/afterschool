@@ -94,3 +94,12 @@
    transform: translateX(0%);
    opacity: 100%;
 }
+
+@media(max-width: 767px) {
+   .benefit-wrapper {
+      flex-direction: column;
+   }
+   .benefit-img-wrapper, .benefit-text-wrapper {
+      width: 100%;
+   }
+}

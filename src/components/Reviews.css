@@ -40,3 +40,13 @@
    text-align: center;
    margin-bottom: 10px;
 }
+
+@media (max-width: 767px) {
+   .reviews-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      max-width: 400px;
+      align-self: center;
+   }
+}

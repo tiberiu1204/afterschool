@@ -39,3 +39,26 @@
    border-radius: 1rem 1rem 1rem 15rem;
    box-shadow: var(--img-box-shadow);
 }
+
+@media(max-width: 767px) {
+   .hero-visual {
+      display: none;
+   }
+   .hero-landing {
+      width: 90%;
+      min-width: unset;
+      margin: 0 auto;
+   }
+   .hero-description {
+      padding-right: 15%;
+   }
+   .hero-title {
+      font-size: 4rem;
+   }
+}
+
+@media(max-width: 416px) {
+   .hero-title {
+      font-size: 3rem;
+   }
+}

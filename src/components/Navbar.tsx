@@ -13,10 +13,6 @@ type SocialsData = {
 };
 
 const Navbar = () => {
-  // const triangles: number[] = [];
-  // // for (let i = 1; i < 100; ++i) {
-  // //   triangles.push(i);
-  // // }
   const navlinks: NavlinkData[] = [
     { text: "Acasă", link: "#" },
     { text: "Afterschool", link: "#" },
@@ -38,11 +34,75 @@ const Navbar = () => {
     else setHeaderIsActive(false);
   });
 
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
+
+  const handleOnMenuIconClick = () => {
+    setIsMobileMenuActive(!isMobileMenuActive);
+    if (isMobileMenuActive) {
+      document.documentElement.classList.remove("mobile-menu-active");
+    } else {
+      document.documentElement.classList.add("mobile-menu-active");
+    }
+  };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      setIsMobileMenuActive(false);
+    }
+  });
+
   return (
     <>
       <div
         className={headerIsActive ? "header-wrapper active" : "header-wrapper"}
       >
+        <div
+          className={`mobile-menu-wrapper ${
+            isMobileMenuActive ? "active" : ""
+          }`}
+        >
+          <div className="mobile-menu-links-wrapper">
+            {navlinks.map((navlink, index) => {
+              return (
+                <Navlink text={navlink.text} link={navlink.link} key={index} />
+              );
+            })}
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div
+          className="mobile-menu-icon-wrapper"
+          onClick={handleOnMenuIconClick}
+        >
+          <svg
+            width="31"
+            height="24"
+            viewBox="0 0 31 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-icon"
+          >
+            <g id="menu-graphic" fill="#D9D9D9">
+              <rect id="upper" width="30.1936" height="3.87097" rx="1.93548" />
+              <rect
+                id="bottom"
+                y="20.129"
+                width="30.1936"
+                height="3.87097"
+                rx="1.93548"
+              />
+              <rect
+                id="middle"
+                y="10.1419"
+                width="30.1936"
+                height="3.87097"
+                rx="1.93548"
+              />
+            </g>
+          </svg>
+        </div>
         <div className="navbar-wrapper">
           <a href="#" className="logo-wrapper">
             <img src="./src/assets/logo.svg" alt="logo" className="logo"></img>
@@ -67,11 +127,6 @@ const Navbar = () => {
           })}
         </div>
       </div>
-      {/* <div className="triangles-wrapper">
-        {triangles.map((id) => {
-          return <div className="triangle" key={id}></div>;
-        })}
-      </div> */}
     </>
   );
 };

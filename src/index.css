@@ -14,7 +14,10 @@
 * {
    box-sizing: border-box;
 }
-
+html,body{overflow-x:hidden; }
+body {
+   overflow: hidden;
+}
 html {
    margin-top: var(--header-height);
    font-family: 'Ubuntu', sans-serif;
@@ -91,4 +94,14 @@ h1, h2, body {
 
 .underline.dark {
    background-color: var(--dark-text);
+}
+
+@media (max-width: 610px) {
+   html {
+      font-size: 14px;
+   };
+}
+
+html.mobile-menu-active {
+   overflow: hidden;
 }
