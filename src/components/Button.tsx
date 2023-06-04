@@ -1,12 +1,12 @@
 import "./Button.css";
 
-interface Props {
+export interface ButtonProps {
   text: string;
   link: string;
   style: "primary" | "secondary";
 }
 
-const Button = ({ text, link, style }: Props) => {
+const Button = ({ text, link, style }: ButtonProps) => {
   return (
     <a className={"button button__" + style + "Theme"} href={link}>
       <span className="button-text">{text}</span>
