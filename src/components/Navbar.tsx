@@ -85,9 +85,16 @@ const Navbar = () => {
             id="menu-icon"
           >
             <g id="menu-graphic" fill="#D9D9D9">
-              <rect id="upper" width="30.1936" height="3.87097" rx="1.93548" />
+              <rect
+                id="upper"
+                className={`${isMobileMenuActive ? "active" : ""}`}
+                width="30.1936"
+                height="3.87097"
+                rx="1.93548"
+              />
               <rect
                 id="bottom"
+                className={`${isMobileMenuActive ? "active" : ""}`}
                 y="20.129"
                 width="30.1936"
                 height="3.87097"
@@ -95,6 +102,7 @@ const Navbar = () => {
               />
               <rect
                 id="middle"
+                className={`${isMobileMenuActive ? "active" : ""}`}
                 y="10.1419"
                 width="30.1936"
                 height="3.87097"
