@@ -73,11 +73,11 @@ h1, h2, body {
 }
 
 .section-triangles-transition.primary {
-   background: url("./src/assets/triangle-white.svg");
+   background: url("./assets/triangle-white.svg");
 }
 
 .section-triangles-transition.grey {
-   background: url("./src/assets/triangle-grey.svg");
+   background: url("./assets/triangle-grey.svg");
 }
 
 .description {

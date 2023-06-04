@@ -14,17 +14,17 @@ type SocialsData = {
 
 const Navbar = () => {
   const navlinks: NavlinkData[] = [
-    { text: "Acasă", link: "#" },
-    { text: "Afterschool", link: "#" },
-    { text: "Scoala de Vară", link: "#" },
-    { text: "Galerie", link: "#" },
-    { text: "Contact", link: "#" },
+    { text: "Acasă", link: "/" },
+    { text: "Afterschool", link: "/afterschool/" },
+    { text: "Scoala de Vară", link: "/scoala-de-vara/" },
+    { text: "Galerie", link: "/galerie/" },
+    { text: "Contact", link: "/contact/" },
   ];
 
   const socials: SocialsData[] = [
-    { source: "./src/assets/facebook.svg", link: "#" },
-    { source: "./src/assets/instagram.svg", link: "#" },
-    { source: "./src/assets/whatsapp.svg", link: "#" },
+    { source: "/assets/facebook.svg", link: "#" },
+    { source: "/assets/instagram.svg", link: "#" },
+    { source: "/assets/whatsapp.svg", link: "#" },
   ];
 
   const [headerIsActive, setHeaderIsActive] = useState(false);
@@ -112,8 +112,8 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="navbar-wrapper">
-          <a href="#" className="logo-wrapper">
-            <img src="./src/assets/logo.svg" alt="logo" className="logo"></img>
+          <a href="/" className="logo-wrapper">
+            <img src="/assets/logo.svg" alt="logo" className="logo"></img>
           </a>
           {navlinks.map((navlink, index) => {
             return (

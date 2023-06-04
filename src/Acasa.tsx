@@ -4,7 +4,7 @@ import Mask from "./components/Mask";
 import Features from "./components/Features";
 import Reviews from "./components/Reviews";
 
-function App() {
+function Acasa() {
   return (
     <>
       <Mask />
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Acasa;
