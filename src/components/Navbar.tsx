@@ -22,9 +22,12 @@ const Navbar = () => {
   ];
 
   const socials: SocialsData[] = [
-    { source: "/assets/facebook.svg", link: "#" },
-    { source: "/assets/instagram.svg", link: "#" },
-    { source: "/assets/whatsapp.svg", link: "#" },
+    {
+      source: "/assets/facebook.svg",
+      link: "https://www.facebook.com/profile.php?id=100083276052390",
+    },
+    { source: "/assets/instagram.svg", link: "/" },
+    { source: "/assets/whatsapp.svg", link: "/" },
   ];
 
   const [headerIsActive, setHeaderIsActive] = useState(false);
@@ -124,7 +127,12 @@ const Navbar = () => {
         <div className="socials-wrapper">
           {socials.map((social, index) => {
             return (
-              <a href={social.link} className="social-link" key={index}>
+              <a
+                href={social.link}
+                className="social-link"
+                key={index}
+                target="_blank"
+              >
                 <img
                   src={social.source}
                   alt="social"
