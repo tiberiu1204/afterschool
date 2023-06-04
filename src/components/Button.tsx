@@ -3,7 +3,7 @@ import "./Button.css";
 export interface ButtonProps {
   text: string;
   link: string;
-  style: "primary" | "secondary";
+  style: "primary" | "secondary" | "tertiary";
 }
 
 const Button = ({ text, link, style }: ButtonProps) => {

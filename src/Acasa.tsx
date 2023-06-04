@@ -12,8 +12,13 @@ function Acasa() {
       Educație <br /> de calitate <br /> copilului tău
     </>
   );
-  const heroDescription =
-    "Alege să investești în educația copilului tău, prin a îl încrie – la fel ca mulți alți părinți mulțumiți – la noi la afterschool, unde se va dezvolta armonios pe plan intelectual, social, și emotional.";
+  const heroDescription = (
+    <>
+      Alege să investești în educația copilului tău, prin a îl încrie – la fel
+      ca mulți alți părinți mulțumiți – la noi la afterschool, unde se va
+      dezvolta armonios pe plan intelectual, social, și emotional.
+    </>
+  );
   return (
     <>
       <Mask />

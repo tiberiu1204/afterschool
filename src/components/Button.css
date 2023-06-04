@@ -19,14 +19,20 @@
    color: var(--dark-text);
 }
 
+.button__tertiaryTheme {
+   background-color: var(--accent-green);
+   color: var(--primary);
+}
+
 .button:hover {
    opacity: 60%;
 }
 
-.button__primaryTheme:hover {
+.button__primaryTheme:hover, .button__tertiaryTheme:hover {
    background-color: var(--dark-text);
    opacity: 100%;
 }
+
 
 .button:hover .arrow-tip {
    transform: translateX(0);
@@ -36,7 +42,7 @@
    opacity: 100%;
 }
 
-.arrow-primary {
+.arrow-primary, .arrow-tertiary {
    fill: white;
 }
 .arrow-secondary {
