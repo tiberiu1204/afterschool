@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import Mask from "./components/Mask";
 import Button from "./components/Button";
 import Hero from "./components/Hero";
+import Program from "./components/Program";
+import { CardProps } from "./components/Program";
 
 const Afterschool = () => {
   const heroTitle = (
@@ -18,6 +20,30 @@ const Afterschool = () => {
     </>
   );
   const imgUrl = "/assets/hero-img.jpg";
+
+  const cards: CardProps[] = [
+    {
+      imgSrc: "/assets/hero-img.jpg",
+      title: "Kaka",
+      bulletPoints: [
+        "kakaas dfasdfasdfasd asdfasdfasd fasdfasdf asdfasd f",
+        "maka",
+        "doi",
+        "lei",
+        "vaca",
+      ],
+    },
+    {
+      title: "Kaka",
+      bulletPoints: ["kaka", "maka", "doi", "lei", "vaca"],
+    },
+    {
+      title: "Kaka",
+      bulletPoints: ["kaka", "maka", "doi", "lei", "vaca"],
+      center: true,
+    },
+  ];
+
   return (
     <>
       <Mask />
@@ -33,6 +59,7 @@ const Afterschool = () => {
         }
         imgSource={imgUrl}
       />
+      <Program cards={cards} />
     </>
   );
 };

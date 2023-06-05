@@ -23,11 +23,22 @@ const Reviews = () => {
     },
   ];
 
+  const { ref: titleRef, inView: titleInView } = useInView();
+  const [titleActive, setTitleActive] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (titleInView) setTitleActive(true);
+  });
   return (
     <section className="section">
       <div className="section-triangles-transition grey"></div>
       <div className="section-container">
         <div className="section-layout-container collumn-layout">
+          <h1
+            className={`section-title animate ${titleActive ? "active" : ""}`}
+            ref={titleRef}
+          >
+            Ce spun părinții
+          </h1>
           <div className="reviews-wrapper">
             {reviews.map((review, index) => {
               const { ref, inView } = useInView();

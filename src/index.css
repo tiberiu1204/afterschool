@@ -49,6 +49,10 @@ h1, h2, body {
    background-color: #f8f4ff;
 }
 
+.grey-green {
+   background-color: #ebfcf5;
+}
+
 .section-layout-container {
    display: flex;
    height: 100%;
@@ -97,12 +101,22 @@ h1, h2, body {
    background-color: var(--dark-text);
 }
 
+html.mobile-menu-active {
+   overflow: hidden;
+}
+
+.section-title {
+   text-align: center;
+   margin: 1rem 0 3rem 0;
+   font-size: 3.5rem;
+   color: var(--dark-text);
+}
+
 @media (max-width: 610px) {
    html {
       font-size: 14px;
-   };
-}
-
-html.mobile-menu-active {
-   overflow: hidden;
+   }
+   .section-title {
+      font-size: 2rem;
+   }
 }
