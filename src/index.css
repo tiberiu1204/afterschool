@@ -97,8 +97,17 @@ h1, h2, body {
    border-radius: 100px;
 }
 
+section.dark {
+   color: var(--primary)!important;
+   background-color: var(--dark-text);
+}
+
 .underline.dark {
    background-color: var(--dark-text);
+}
+
+.underline.primary {
+   background-color: var(--primary);
 }
 
 html.mobile-menu-active {
@@ -110,6 +119,10 @@ html.mobile-menu-active {
    margin: 1rem 0 3rem 0;
    font-size: 3.5rem;
    color: var(--dark-text);
+}
+
+.section-title.primary {
+   color: var(--primary)
 }
 
 @media (max-width: 610px) {

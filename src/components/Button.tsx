@@ -4,11 +4,16 @@ export interface ButtonProps {
   text: string;
   link: string;
   style: "primary" | "secondary" | "tertiary";
+  target?: "_blank";
 }
 
-const Button = ({ text, link, style }: ButtonProps) => {
+const Button = ({ text, link, style, target }: ButtonProps) => {
   return (
-    <a className={"button button__" + style + "Theme"} href={link}>
+    <a
+      className={"button button__" + style + "Theme"}
+      href={link}
+      target={`${target ? target : ""}`}
+    >
       <span className="button-text">{text}</span>
       <svg
         width="5"

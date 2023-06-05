@@ -1,9 +1,10 @@
 import "./Program.css";
+import { ReactNode } from "react";
+import Handprint from "./Handprint";
 
 export interface CardProps {
+  children?: ReactNode;
   imgSrc?: string;
-  title: string;
-  bulletPoints: string[];
   center?: boolean;
 }
 
@@ -17,14 +18,17 @@ const Program = ({ cards }: ProgramProps) => {
       <div className="section-triangles-transition primary"></div>
       <div className="section-container">
         <div className="section-layout-container collumn-layout">
-          <h1 className="section-title">Program, servicii și tarife</h1>
+          <h1 className="section-title">
+            <Handprint fill="#15be53" big={true} />
+            Program, servicii și tarife
+            <Handprint fill="#15be53" big={true} flipped={true} />
+          </h1>
           <div className="cards-wrapper">
             {cards.map((card, index) => {
               return (
                 <Card
                   imgSrc={card.imgSrc}
-                  title={card.title}
-                  bulletPoints={card.bulletPoints}
+                  children={card.children}
                   center={card.center}
                   key={index}
                 />
@@ -37,10 +41,10 @@ const Program = ({ cards }: ProgramProps) => {
   );
 };
 
-export const Card = ({ imgSrc, title, bulletPoints, center }: CardProps) => {
+export const Card = ({ children, imgSrc, center }: CardProps) => {
   return (
     <div className="card-wrapper">
-      <div className={`card grey-green ${center ? "center" : ""}`}>
+      <div className={"card grey-green"}>
         {imgSrc ? (
           <div className="card-image-wrapper">
             <img src={imgSrc} alt="card image" className="card-image"></img>
@@ -48,18 +52,8 @@ export const Card = ({ imgSrc, title, bulletPoints, center }: CardProps) => {
         ) : (
           ""
         )}
-        <div className={"card-text-wrapper"}>
-          <h1 className="card-title">{title}</h1>
-          <div className="underline dark"></div>
-          <ul className="point-list">
-            {bulletPoints.map((point, index) => {
-              return (
-                <li className="point" key={index}>
-                  {point}
-                </li>
-              );
-            })}
-          </ul>
+        <div className={`card-text-wrapper ${center ? "center" : ""}`}>
+          {children}
         </div>
       </div>
     </div>

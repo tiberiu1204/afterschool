@@ -1,6 +1,13 @@
 .hand-print {
-   margin-right: .6rem;
+   margin: 0 .6rem;
    width: 1.93rem;
    height: 1.87rem;
-   vertical-align:baseline;
+   vertical-align: baseline;
+}
+
+.hand-print.big {
+   margin: 0 1.2rem;
+   width: 4rem;
+   height: 3.8rem;
+   vertical-align: top;
 }

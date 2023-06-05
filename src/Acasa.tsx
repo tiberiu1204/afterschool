@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Reviews from "./components/Reviews";
 import Button from "./components/Button";
 import { ReactNode } from "react";
+import Location from "./components/Location";
 
 function Acasa() {
   const heroTitle: ReactNode = (
@@ -31,8 +32,8 @@ function Acasa() {
         }
         secondaryButton={
           <Button
-            text="Program și oferte"
-            link="tel:+40766553533"
+            text="Program afterschool"
+            link="/afterschool/"
             style="secondary"
           />
         }
@@ -40,6 +41,7 @@ function Acasa() {
       />
       <Features />
       <Reviews />
+      <Location />
     </>
   );
 }

@@ -1,5 +1,6 @@
 .button {
    display: inline-block;
+   align-self: start;  
    margin: .3rem;
    font-weight: 500;
    border-radius: 2rem;

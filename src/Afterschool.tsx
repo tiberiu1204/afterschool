@@ -24,22 +24,35 @@ const Afterschool = () => {
   const cards: CardProps[] = [
     {
       imgSrc: "/assets/hero-img.jpg",
-      title: "Kaka",
-      bulletPoints: [
-        "kakaas dfasdfasdfasd asdfasdfasd fasdfasdf asdfasd f",
-        "maka",
-        "doi",
-        "lei",
-        "vaca",
-      ],
     },
     {
-      title: "Kaka",
-      bulletPoints: ["kaka", "maka", "doi", "lei", "vaca"],
+      imgSrc: "/assets/hero-img.jpg",
     },
     {
-      title: "Kaka",
-      bulletPoints: ["kaka", "maka", "doi", "lei", "vaca"],
+      children: (
+        <>
+          <h1 className="card-title">Title</h1>
+          <div className="underline dark"></div>
+        </>
+      ),
+      center: true,
+    },
+    {
+      children: (
+        <>
+          <h1 className="card-title">Title</h1>
+          <div className="underline dark"></div>
+        </>
+      ),
+      center: true,
+    },
+    {
+      children: (
+        <>
+          <h1 className="card-title">Title</h1>
+          <div className="underline dark"></div>
+        </>
+      ),
       center: true,
     },
   ];
