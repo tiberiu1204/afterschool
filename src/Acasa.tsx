@@ -6,6 +6,7 @@ import Reviews from "./components/Reviews";
 import Button from "./components/Button";
 import { ReactNode } from "react";
 import Location from "./components/Location";
+import { isMobile } from "react-device-detect";
 
 function Acasa() {
   const heroTitle: ReactNode = (
@@ -28,14 +29,14 @@ function Acasa() {
         title={heroTitle}
         description={heroDescription}
         primaryButton={
-          <Button text="Sună acum" link="tel:+40766553533" style="primary" />
+          <Button
+            text={`${isMobile ? "Sună acum" : "Contact"}`}
+            link={`${isMobile ? "tel:+40766553533" : "/contact/"}`}
+            style="primary"
+          />
         }
         secondaryButton={
-          <Button
-            text="Program afterschool"
-            link="/afterschool/"
-            style="secondary"
-          />
+          <Button text="Afterschool" link="/afterschool/" style="secondary" />
         }
         imgSource="/images/hero-img.jpg"
       />

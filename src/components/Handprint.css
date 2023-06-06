@@ -11,3 +11,28 @@
    height: 3.8rem;
    vertical-align: top;
 }
+
+.hand-print.baseline {
+   vertical-align:baseline;
+}
+.hand-print.bottom {
+   vertical-align:bottom;
+}
+.hand-print.middle {
+   vertical-align:middle;
+}
+.hand-print.sub {
+   vertical-align:sub;
+}
+.hand-print.super {
+   vertical-align:super;
+}
+.hand-print.text-bottom {
+   vertical-align:text-bottom;
+}
+.hand-print.text-top {
+   vertical-align:text-top;
+}
+.hand-print.top {
+   vertical-align:top;
+}

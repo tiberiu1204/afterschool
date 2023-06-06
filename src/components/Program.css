@@ -33,9 +33,7 @@
    transition: all 400ms ease-out;
 }
 
-.card:hover {
-   transform: scale(1.05);
-}
+
 
 .card-image-wrapper {
    border-radius: inherit;
@@ -58,20 +56,25 @@
    border-radius: inherit;
    border-bottom-left-radius: 0;
    border-bottom-right-radius: 0;
+   border-bottom: 3px solid var(--dark-text);
 }
 
 .card-title {
-   font-size: 2.5rem;
+   font-size: 2rem;
    margin-top: 32px;
 }
 
-.point {
-   font-size: 1.6rem;
+.card-fact {
+   font-size: 1.2rem;
+   margin: 0;
+   margin-top: .5rem;
+   line-height: 1.7rem;
 }
 
-.point-list {
-   line-height: 2.5rem;
-   list-style: none;
+@media (max-width: 520px) {
+   .card-title {
+      font-size: 1.5rem;
+   }
 }
 
 .card-text-wrapper.center {
@@ -89,4 +92,14 @@
 .card.active {
    transform: translateX(0);
    opacity: 100%;
+}
+
+.card:hover {
+   box-shadow: 0 0 20px 2px rgba(0, 0, 0, .35);
+}
+
+.card-subtitle {
+   color: var(--dark-text);
+   font-size: 1.4rem;
+   margin-top: 2rem;
 }

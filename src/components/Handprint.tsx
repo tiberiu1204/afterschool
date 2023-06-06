@@ -4,9 +4,18 @@ interface Props {
   fill?: string;
   flipped?: boolean;
   big?: boolean;
+  verticalAlign?:
+    | "baseline"
+    | "bottom"
+    | "middle"
+    | "sub"
+    | "super"
+    | "text-bottom"
+    | "text-top"
+    | "top";
 }
 
-const Handprint = ({ fill, flipped, big }: Props) => {
+const Handprint = ({ fill, flipped, big, verticalAlign }: Props) => {
   if (flipped) {
     return (
       <svg
@@ -15,7 +24,7 @@ const Handprint = ({ fill, flipped, big }: Props) => {
         viewBox="0 0 31 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={`hand-print ${big ? "big" : ""}`}
+        className={`hand-print ${big} ${verticalAlign}`}
       >
         <g fill={`${fill ? fill : "#3700BB"}`}>
           <path
@@ -50,7 +59,7 @@ const Handprint = ({ fill, flipped, big }: Props) => {
       viewBox="0 0 31 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`hand-print ${big ? "big" : ""}`}
+      className={`hand-print ${big} ${verticalAlign}`}
     >
       <g fill={`${fill ? fill : "#3700BB"}`}>
         <path
