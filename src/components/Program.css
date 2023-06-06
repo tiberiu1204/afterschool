@@ -29,7 +29,8 @@
    align-items: flex-start;
    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .2);
    border-radius: 1.5rem;
-   transition: all 300ms ease-in-out;
+   opacity: 0%;
+   transition: all 400ms ease-out;
 }
 
 .card:hover {
@@ -75,4 +76,17 @@
 
 .card-text-wrapper.center {
    align-items: center;
+}
+
+.card.left {
+   transform: translateX(-25%);
+}
+
+.card.right {
+   transform: translateX(25%);
+}
+
+.card.active {
+   transform: translateX(0);
+   opacity: 100%;
 }

@@ -2,14 +2,21 @@ import "./Program.css";
 import { ReactNode } from "react";
 import Handprint from "./Handprint";
 
-export interface CardProps {
+interface CardProps {
   children?: ReactNode;
   imgSrc?: string;
   center?: boolean;
+  index: number;
 }
 
+export type CardInfo = {
+  children?: ReactNode;
+  imgSrc?: string;
+  center?: boolean;
+};
+
 interface ProgramProps {
-  cards: CardProps[];
+  cards: CardInfo[];
 }
 
 const Program = ({ cards }: ProgramProps) => {
@@ -31,6 +38,7 @@ const Program = ({ cards }: ProgramProps) => {
                   children={card.children}
                   center={card.center}
                   key={index}
+                  index={index}
                 />
               );
             })}
@@ -41,10 +49,23 @@ const Program = ({ cards }: ProgramProps) => {
   );
 };
 
-export const Card = ({ children, imgSrc, center }: CardProps) => {
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
+
+export const Card = ({ children, imgSrc, center, index }: CardProps) => {
+  const { ref, inView } = useInView();
+  const [isActive, setIsActive] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (inView) setIsActive(true);
+  });
   return (
     <div className="card-wrapper">
-      <div className={"card grey-green"}>
+      <div
+        ref={ref}
+        className={`card grey-green ${index % 2 == 0 ? "left" : "right"} ${
+          isActive ? "active" : ""
+        }`}
+      >
         {imgSrc ? (
           <div className="card-image-wrapper">
             <img src={imgSrc} alt="card image" className="card-image"></img>

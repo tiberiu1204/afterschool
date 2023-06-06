@@ -3,7 +3,7 @@ import Mask from "./components/Mask";
 import Button from "./components/Button";
 import Hero from "./components/Hero";
 import Program from "./components/Program";
-import { CardProps } from "./components/Program";
+import { CardInfo } from "./components/Program";
 
 const Afterschool = () => {
   const heroTitle = (
@@ -21,7 +21,7 @@ const Afterschool = () => {
   );
   const imgUrl = "/images/hero-img.jpg";
 
-  const cards: CardProps[] = [
+  const cards: CardInfo[] = [
     {
       imgSrc: "/images/hero-img.jpg",
     },
