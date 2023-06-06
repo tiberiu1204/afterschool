@@ -17,7 +17,7 @@ const Mask = () => {
       </div>
       <div className="rainbow-waves">
         <img
-          src="/rainbow-waves.svg"
+          src="/images/rainbow-waves.svg"
           alt="rainbow waves"
           className="rainbow-waves-img"
         />

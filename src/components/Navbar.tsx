@@ -23,11 +23,11 @@ const Navbar = () => {
 
   const socials: SocialsData[] = [
     {
-      source: "/facebook.svg",
+      source: "/images/facebook.svg",
       link: "https://www.facebook.com/profile.php?id=100083276052390",
     },
-    { source: "/instagram.svg", link: "/" },
-    { source: "/whatsapp.svg", link: "/" },
+    { source: "/images/instagram.svg", link: "/" },
+    { source: "/images/whatsapp.svg", link: "/" },
   ];
 
   const [headerIsActive, setHeaderIsActive] = useState(false);
@@ -116,7 +116,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-wrapper">
           <a href="/" className="logo-wrapper">
-            <img src="/logo.svg" alt="logo" className="logo"></img>
+            <img src="/images/logo.svg" alt="logo" className="logo"></img>
           </a>
           {navlinks.map((navlink, index) => {
             return (

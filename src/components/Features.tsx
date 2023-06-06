@@ -18,44 +18,44 @@ const Features = () => {
   const features: Feature[] = [
     {
       name: "Personal Didactic Calificat",
-      iconUrl: "/facebook.svg",
+      iconUrl: "/images/facebook.svg",
     },
     {
       name: "Bla bla bla",
-      iconUrl: "/facebook.svg",
+      iconUrl: "/images/facebook.svg",
     },
     {
       name: "Bla bla bla",
-      iconUrl: "/facebook.svg",
+      iconUrl: "/images/facebook.svg",
     },
     {
       name: "Bla bla bla",
-      iconUrl: "/facebook.svg",
+      iconUrl: "/images/facebook.svg",
     },
   ];
 
   const benefits: Benefit[] = [
     {
       name: "Kaka maka",
-      imgUrl: "/hero-img.jpg",
+      imgUrl: "/images/hero-img.jpg",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, animi praesentium aspernatur doloribus quam culpa? Possimus, officia incidunt. Sunt, sapiente a! Explicabo soluta sed, dicta id porro nisi eligendi.",
     },
     {
       name: "Kaka maka",
-      imgUrl: "/hero-img.jpg",
+      imgUrl: "/images/hero-img.jpg",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, animi praesentium aspernatur doloribus quam culpa? Possimus, officia incidunt. Sunt, sapiente a! Explicabo soluta sed, dicta id porro nisi eligendi.",
     },
     {
       name: "Kaka maka",
-      imgUrl: "/hero-img.jpg",
+      imgUrl: "/images/hero-img.jpg",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, animi praesentium aspernatur doloribus quam culpa? Possimus, officia incidunt. Sunt, sapiente a! Explicabo soluta sed, dicta id porro nisi eligendi.",
     },
     {
       name: "Kaka maka",
-      imgUrl: "/hero-img.jpg",
+      imgUrl: "/images/hero-img.jpg",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem, animi praesentium aspernatur doloribus quam culpa? Possimus, officia incidunt. Sunt, sapiente a! Explicabo soluta sed, dicta id porro nisi eligendi.",
     },
