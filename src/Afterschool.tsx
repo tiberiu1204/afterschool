@@ -19,14 +19,14 @@ const Afterschool = () => {
       asteptați, și alegeți acum Steluțe Curcubeu Afterschool!
     </>
   );
-  const imgUrl = "/assets/hero-img.jpg";
+  const imgUrl = "/hero-img.jpg";
 
   const cards: CardProps[] = [
     {
-      imgSrc: "/assets/hero-img.jpg",
+      imgSrc: "/hero-img.jpg",
     },
     {
-      imgSrc: "/assets/hero-img.jpg",
+      imgSrc: "/hero-img.jpg",
     },
     {
       children: (

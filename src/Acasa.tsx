@@ -37,7 +37,7 @@ function Acasa() {
             style="secondary"
           />
         }
-        imgSource="/assets/hero-img.jpg"
+        imgSource="/hero-img.jpg"
       />
       <Features />
       <Reviews />
