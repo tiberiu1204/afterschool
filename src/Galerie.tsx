@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import Mask from "./components/Mask";
+import Gallery from "./components/Gallery";
 
 const Galerie = () => {
   return (
     <>
-      <Mask />
       <Navbar />
+      <Gallery />
     </>
   );
 };

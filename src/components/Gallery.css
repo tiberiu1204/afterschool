@@ -1,0 +1,39 @@
+.gallery-wrapper {
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.images-wrapper {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.image-wrapper {
+   width: 100%;
+   max-width: 540px;
+   padding: 16px;
+   display: flex;
+   align-items: center;
+}
+
+.image {
+   width: 100%;
+   border-radius: 16px;
+   box-shadow: var(--img-box-shadow);
+   border: 1px silver solid;
+   transition: all 300ms;
+}
+
+.image:hover {
+   transform: scale(1.03);
+}
+
+.caption {
+   font-style: italic;
+   opacity: 70%;
+   color: var(--dark-text);
+}

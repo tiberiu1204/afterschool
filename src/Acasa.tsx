@@ -36,7 +36,11 @@ function Acasa() {
           />
         }
         secondaryButton={
-          <Button text="Afterschool" link="/afterschool/" style="secondary" />
+          <Button
+            text="Scoala de Vară"
+            link="/scoala-de-vara/"
+            style="secondary"
+          />
         }
         imgSource="/images/hero-img.jpg"
       />

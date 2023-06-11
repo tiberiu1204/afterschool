@@ -6,6 +6,7 @@
    --tertiary: #3700bb;
    --accent: #635bff;
    --accent-green: #15be53;
+   --accent-blue: #179eff;
    --dark-text: #001620;
    --header-height: 60px;
    --layout-width: 1080px;
@@ -51,6 +52,10 @@ h1, h2, body {
 
 .grey-green {
    background-color: #ebfcf5;
+}
+
+.grey-blue {
+   background-color: #e6f6fa;
 }
 
 .section-layout-container {

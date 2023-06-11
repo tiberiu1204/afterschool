@@ -3,7 +3,7 @@ import "./Button.css";
 export interface ButtonProps {
   text: string;
   link: string;
-  style: "primary" | "secondary" | "tertiary";
+  style: "primary" | "secondary" | "tertiary" | "quaternary";
   target?: "_blank";
 }
 

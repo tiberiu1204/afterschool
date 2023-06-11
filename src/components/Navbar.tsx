@@ -27,7 +27,7 @@ const Navbar = () => {
       link: "https://www.facebook.com/profile.php?id=100083276052390",
     },
     { source: "/images/instagram.svg", link: "/" },
-    { source: "/images/whatsapp.svg", link: "/" },
+    { source: "/images/whatsapp.svg", link: "https://wa.me/+40766553533" },
   ];
 
   const [headerIsActive, setHeaderIsActive] = useState(false);

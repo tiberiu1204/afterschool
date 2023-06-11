@@ -19,11 +19,12 @@ export type CardInfo = {
 
 interface ProgramProps {
   cards: CardInfo[];
+  style?: string;
 }
 
-const Program = ({ cards }: ProgramProps) => {
+const Program = ({ cards, style }: ProgramProps) => {
   return (
-    <section className="section grey-green">
+    <section className={`section ${style || "grey-green"}`}>
       <div className="section-triangles-transition primary"></div>
       <div className="section-container">
         <div className="section-layout-container collumn-layout">

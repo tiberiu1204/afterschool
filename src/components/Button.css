@@ -25,11 +25,16 @@
    color: var(--primary);
 }
 
+.button__quaternaryTheme {
+   background-color: var(--accent-blue);
+   color: var(--primary);
+}
+
 .button:hover {
    opacity: 60%;
 }
 
-.button__primaryTheme:hover, .button__tertiaryTheme:hover {
+.button__primaryTheme:hover, .button__tertiaryTheme:hover, .button__quaternaryTheme:hover {
    background-color: var(--dark-text);
    opacity: 100%;
 }
@@ -43,8 +48,8 @@
    opacity: 100%;
 }
 
-.arrow-primary, .arrow-tertiary {
-   fill: white;
+.arrow-primary, .arrow-tertiary, .arrow-quaternary {
+   fill: var(--primary);
 }
 .arrow-secondary {
    fill: var(--dark-text);
